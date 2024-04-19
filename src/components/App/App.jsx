@@ -9,8 +9,8 @@ export default function App() {
   useEffect(() => {
     async function getImages() {
       const imageData = await fetchImages();
-      console.log(imageData);
-      // setImages(imageData);
+      // console.log(imageData);
+      setImages(imageData);
     }
 
     getImages();
