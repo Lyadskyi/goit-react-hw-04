@@ -1,5 +1,14 @@
 .container {
   display: flex;
   justify-content: center;
-  color: blueviolet;
+  padding: 10px 0;
+  background-color: #2c4ccf;
+}
+
+.head {
+  color: #f9ebea;
+}
+
+.head:hover {
+  scale: 1.02;
 }

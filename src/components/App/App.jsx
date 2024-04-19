@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchImages } from "../../images-api";
 import css from "./App.module.css";
-// import ImageGallery from "../ImageGallery/ImageGallery";
+import ImageGallery from "../ImageGallery/ImageGallery";
 
 export default function App() {
-  // const [images, setImages] = useState([]);
+  const [images, setImages] = useState([]);
 
   useEffect(() => {
     async function getImages() {
@@ -18,8 +18,10 @@ export default function App() {
 
   return (
     <div className={css.container}>
-      <h1>Image search application by keyword</h1>
-      {/* <ImageGallery images={images} /> */}
+      <h2 className={css.head}>
+        Застосунок пошуку зображень за ключовим словом
+      </h2>
+      <ImageGallery images={images} />
     </div>
   );
 }

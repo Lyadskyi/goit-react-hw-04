@@ -6,5 +6,5 @@ const ACCESS_KEY = "jUX8RIPi9BwKL9E9VSwgkiB037_bbGeNpple5xrBBWY";
 
 export const fetchImages = async () => {
   const response = await axios.get(`photos/?client_id=${ACCESS_KEY}`);
-  return response.imageData;
+  return response.data;
 };
