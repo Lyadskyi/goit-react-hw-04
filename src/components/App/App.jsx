@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { fetchImages } from "../../images-api";
 import css from "./App.module.css";
+import SearchBar from "../SearchBar/SearchBar";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import ImageGallery from "../ImageGallery/ImageGallery";
 
 export default function App() {
+  // const [searchValue, setSearchValue] = useState("");
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -28,12 +30,9 @@ export default function App() {
 
   return (
     <div className={css.container}>
-      <h2 className={css.head}>
-        Застосунок пошуку зображень за ключовим словом
-      </h2>
+      <SearchBar onSubmit={() => {}} />
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
-      {/* <Loader /> */}
       <ImageGallery images={images} />
     </div>
   );

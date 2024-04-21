@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 15px 0;
+  gap: 10px;
+  color: bisque;
+  background-color: #153feb;
+}
+
+.input {
+  width: 400px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 6px 4px;
+}
+
+.btn {
+  font-size: 18px;
+  border-radius: 5px;
+}
