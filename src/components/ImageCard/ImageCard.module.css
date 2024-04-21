@@ -1,0 +1,13 @@
+.wrapper {
+  width: 474px;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.wrapper img:hover {
+  scale: 1.01;
+}

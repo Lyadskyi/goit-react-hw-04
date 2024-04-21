@@ -28,6 +28,12 @@ export default function App() {
     getImages();
   }, []);
 
+  // const handleSearch = (newQuery) => {
+  //   setQuery(newQuery);
+  //   setPage(1);
+  //   setItems([]);
+  // };
+
   return (
     <div className={css.container}>
       <SearchBar onSubmit={() => {}} />
