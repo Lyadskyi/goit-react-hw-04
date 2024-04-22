@@ -1,0 +1,11 @@
+.containerBtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.loadBtn {
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

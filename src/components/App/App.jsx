@@ -5,6 +5,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import ImageGallery from "../ImageGallery/ImageGallery";
+import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 
 export default function App() {
   // const [searchValue, setSearchValue] = useState("");
@@ -40,6 +41,7 @@ export default function App() {
       {isLoading && <Loader />}
       {error && <ErrorMessage />}
       <ImageGallery images={images} />
+      <LoadMoreBtn />
     </div>
   );
 }
