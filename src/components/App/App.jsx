@@ -71,7 +71,6 @@ export default function App() {
     <div className={css.container}>
       <SearchBar onSubmit={handleSearch} />
       {error && <ErrorMessage />}
-      <ImageGallery images={images} />
       {images.length > 0 && (
         <ImageGallery images={images} modal={handleOpenModal} />
       )}
