@@ -74,7 +74,6 @@ export default function App() {
       {images.length > 0 && (
         <ImageGallery images={images} modal={handleOpenModal} />
       )}
-      <ImageModal />
       {isLoading && <Loader />}
       {images.length > 0 && !isLoading && (
         <LoadMoreBtn loadMore={handleLoadMore} />
